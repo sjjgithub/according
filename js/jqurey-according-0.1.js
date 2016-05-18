@@ -16,10 +16,12 @@
 				$(this).bind("click",hClick)
 			})
 			function hClick(){
-				obj.find(":header ."+opti.headerActive).removeClass(opti.headerActive)
+				console.log($(this))
+				if($(this).hasClass(optio.headerActive)){return}
+				obj.find(":header."+optio.headerActive).removeClass(optio.headerActive)
 				obj.find("."+optio.content+":visible").slideUp();
 				var ind=obj.find(":header").index($(this));
-				$(this).addClass(opti.headerActive);
+				$(this).addClass(optio.headerActive);
 				obj.find("."+optio.content).eq(ind).slideDown();
 			}
 			})
