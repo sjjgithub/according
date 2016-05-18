@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta charset="UTF-8">
+		<title></title>
+		<style type="text/css">
+		*{margin: 0;padding: 0;}
+			ul{list-style: none;}
+			#accle{width: 500px;height: auto;margin: 10px 50px;border: 1px solid #999;}
+			#accle h1{border-bottom: 1px solid #999;}
+			#accle .content{height: 200px;border-bottom: 1px solid #999;}
+			#accle h1{height: 35px;background-color: green;}
+			#accle h1.active{background-color: pink;}
+		</style>
+		<script type="text/javascript"src="js/jquery-1.4.2.min.js">	
+		</script>
+		<script type="text/javascript"src="js/jqurey-according-0.1.js">
+		</script>
+		<script type="text/javascript">
+		$(function(){
+		
+			$("#accle").according({
+				start:0,headerActive:"active",content:"content"
+			})
+		})
+		</script>
+	</head>
+	<body>
+		<ul id="accle">
+			<li>
+				<h1>header1</h1>
+				<div class="content">内容1<div>
+			</li>
+			<li>
+				<h1>header2</h1>
+				<div class="content">内容2<div>
+			</li>
+			<li>
+				<h1>header3</h1>
+				<div class="content">内容3<div>
+			</li>
+		</ul>
+	</body>
+</html>
